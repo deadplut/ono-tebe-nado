@@ -1,9 +1,11 @@
 /* место для вашего кода */
-body {
+.body {
     width: 1440px;
+    margin: auto;
+    overflow-x: hidden;
 }
 
-h2 {
+.h2 {
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -14,7 +16,7 @@ h2 {
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
     margin: 92px 49px 0 51px;
-    height: 109px;
+    min-height: 109px;
 }
 
 .header,
@@ -34,12 +36,13 @@ h2 {
     list-style-type: circle;
 }
 
-.header__link {
-    text-decoration: none;
-}
-
 .no-bullit {
     list-style-type: none;
+}
+
+.header__link_active,
+.footer__link_active {
+    text-decoration: none;
 }
 
 .header__links-list-item {
@@ -64,9 +67,9 @@ h2 {
 }
 
 .cover {
-    height: 757px;
+    min-height: 757px;
     margin-top: 92px;
-    background: rgba(0, 0, 0, .6) url(/images/cover.jpg) no-repeat;
+    background: rgba(0, 0, 0, .6) url(../images/cover.jpg) no-repeat;
     background-blend-mode: darken;
     background-size: cover;
     color: white;
@@ -96,7 +99,7 @@ h2 {
     text-align: end;
 }
 
-.cover .s60 {
+.cover span {
     letter-spacing: 60px;
 }
 
@@ -124,6 +127,11 @@ h2 {
     margin-left: 78px;
     padding: 12px 32px;
     border: 1px solid #FFF;
+    color: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    line-height: inherit;
 }
 
 .lots {
@@ -149,15 +157,15 @@ h2 {
 }
 
 .card_type_film {
-    background: rgba(0, 0, 0, .6) url(/images/card-lot-01.jpg) no-repeat;
+    background: rgba(0, 0, 0, .6) url(../images/card-lot-01.jpg) no-repeat;
 }
 
 .card_type_book {
-    background: rgba(0, 0, 0, .6) url(/images/card-lot-02.jpg) no-repeat;
+    background: rgba(0, 0, 0, .6) url(../images/card-lot-02.jpg) no-repeat;
 }
 
 .card_type_picture {
-    background: rgba(0, 0, 0, .6) url(/images/card-lot-03.jpg) no-repeat;
+    background: rgba(0, 0, 0, .6) url(../images/card-lot-03.jpg) no-repeat;
 }
 
 
@@ -166,7 +174,7 @@ h2 {
     flex-direction: column;
     justify-content: space-between;
     width: 430px;
-    height: 450px;
+    min-height: 450px;
     background-blend-mode: darken;
     background-size: cover;
     padding: 50px 40px;
@@ -222,12 +230,16 @@ h2 {
     height: 114px;
     flex-shrink: 0;
 }
+.about__title {
+    margin: 100px 0;
+}
 
 .about__text {
-    display: grid;
-    grid-template-rows: 146px 196px 144px;
-    align-items: end;
     width: 885px;
+}
+
+.about__text p{
+    margin-top: 25px;
 }
 
 .about__text p {
