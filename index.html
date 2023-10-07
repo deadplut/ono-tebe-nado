@@ -29,26 +29,35 @@
     <img class="header__logo-image" src="./images/logo-black.svg" alt="image">
   </a>
   <address class="header__address">
-    <p><a href="tel:+99995555555">+9 999 555 5555</a></p>
-    <p><a href="mailto:info@sobaka.ge">info@sobaka.ge</a></p>
-    <p>наб. Принсенграхт 263-265,</p>
-    <p>Амстердам</p>
+    <a class="header__address__link" href="tel:+99995555555">+9 999 555 5555</a>
+    <a class="header__address__link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+    <!--  Вам может помочь тег <br> — он одиночный, отвечает за перенос текста на следующую строку.
+    Есть небольшое количество случаев, когда его уместно использовать.
+    Один из них — чтобы визуально разделить семантически единый блок контента.
+    Например, ссылки на телефон и почту, идущие одной строкой.
+
+    А вам необходимо читать задание перед проверкой:
+    https://practicum.yandex.ru/learn/high-education-web-developer-magistr/courses/e0a5c8bd-17bf-4786-ab1b-a13bc4350bc5/sprints/187938/topics/afddaaec-cf54-4ee1-bcf8-ad839760febb/lessons/2b931258-32d9-4ad2-8735-b2b8e5db7834/
+    -->
+    <p>наб. Принсенграхт 263-265,</br>
+      Амстердам</p>
   </address>
 </header>
 <main>
   <section class="cover">
     <div class="cover__title">
+<!--      Это не ошибка не использовать какой-то тэг, который нравится лично вам-->
       <div class="cover__title__first">О<span>н</span>о</div>
       <div class="cover__title__second">Те<span>б</span>e</div>
-      <div class="cover__title__third"><span>Н</span>aд<span class="s0">о</span></div>
+      <div class="cover__title__third"><span>Н</span>aдо</div>
     </div>
     <div class="cover__description">
       <p class="cover__description-text">Аукцион вещей, в которые никто не верил</p>
-      <a href="" class="bet-button">Сделать ставку</a>
+      <button class="bet-button">Сделать ставку</button>
     </div>
   </section>
   <section class="lots">
-    <h2 class="h2 lots__heading">Лоты</h2>
+    <h2 class="lots__heading">Лоты</h2>
     <ul class="lots__card-list">
       <li class="lots__card-list-item">
         <a href="#" class="card-link">
@@ -89,7 +98,7 @@
         <img class="about__logo-image" src="./images/logo-white.svg" alt="image">
       </div>
       <article class="about__text">
-        <h2 class="h2 about__title">Об аукционе</h2>
+        <h2 class="about__title">Об аукционе</h2>
         <p>Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не
           должны
           были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может
@@ -105,9 +114,9 @@
 </main>
 <footer class="footer">
   <address class="footer__address">
-    <p><a class="footer__link" href="tel:+99995555555">+9 999 555 5555</a></p>
-    <p><a class="footer__link" href="mailto:info@sobaka.ge">info@sobaka.ge</a></p>
-    <p>наб. Принсенграхт 263-265,</p>
+    <a class="footer__link" href="tel:+99995555555">+9 999 555 5555</a>
+    <a class="footer__link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+    <p>наб. Принсенграхт 263-265,</br>
     <p>Амстердам</p>
   </address>
   <nav class="footer__menu">
@@ -131,7 +140,7 @@
     </li>
     <li class="footer__social-list-item">
       <a href="" class="footer__social-link">
-        <img src="./images/vk.svg" alt="it's the biggest piece of dog shit" class="footer__social-icon"></a>
+        <img src="./images/vk.svg" alt="image"></a>
     </li>
     <li class="footer__social-list-item">
       <a href="" class="footer__social-link">

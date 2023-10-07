@@ -10,6 +10,7 @@ body {
   font-family: Raleway, sans-serif;
 }
 
+
 h1,
 h2,
 h3,
@@ -20,12 +21,14 @@ p,
 ul,
 ol,
 li,
-blockquote {
+blockquote,
+button {
   margin: 0;
   padding: 0;
 }
 
-a {
+a,
+button {
   color: inherit;
 }
 
@@ -33,7 +36,8 @@ img {
   width: 100%;
 }
 
-address {
+address,
+button {
   font-style: normal;
 }
 
